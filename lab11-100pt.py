@@ -23,7 +23,7 @@ def animate():
     # Get the x and y co-ordinates of the circle
     x1, y1, x2, y2 = drawpad.coords(circle)
     if x2 > drawpad.winfo_width(): 
-        direction = -150
+        drawpad.move(circle,-750,0)
     elif x1 < 0:
         direction = 5
     #Move our oval object by the value of direction
